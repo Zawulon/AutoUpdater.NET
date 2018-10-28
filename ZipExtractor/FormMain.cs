@@ -29,7 +29,7 @@ namespace ZipExtractor
                     {
                         if (process.MainModule.FileName.Equals(args[2]))
                         {
-                            labelInformation.Text = @"Waiting for application to Exit...";
+                            labelInformation.Text = @"Oczekiwanie na zamknięcie aplikacji...";
                             process.WaitForExit();
                         }
                     }
@@ -66,7 +66,7 @@ namespace ZipExtractor
                         }
                         ZipStorer.ZipFileEntry entry = dir[index];
                         zip.ExtractFile(entry, Path.Combine(path, entry.FilenameInZip));
-                        _backgroundWorker.ReportProgress((index + 1) * 100 / dir.Count, string.Format(Resources.CurrentFileExtracting, entry.FilenameInZip));
+                        _backgroundWorker.ReportProgress((index + 1) * 100 / dir.Count, string.Format("Wypakowywanie: {0}", entry.FilenameInZip));
                     }
 
                     zip.Close();
@@ -82,7 +82,7 @@ namespace ZipExtractor
                 {
                     if (!eventArgs.Cancelled)
                     {
-                        labelInformation.Text = @"Finished";
+                        labelInformation.Text = @"Zakończono.";
                         try
                         {
                             ProcessStartInfo processStartInfo = new ProcessStartInfo(args[2]);

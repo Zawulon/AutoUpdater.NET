@@ -38,6 +38,7 @@
             // 
             // pictureBoxIcon
             // 
+            this.pictureBoxIcon.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxIcon.Image = global::AutoUpdaterDotNET.Properties.Resources.download_32;
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
             this.pictureBoxIcon.Name = "pictureBoxIcon";
@@ -51,22 +52,27 @@
             // labelInformation
             // 
             resources.ApplyResources(this.labelInformation, "labelInformation");
+            this.labelInformation.BackColor = System.Drawing.Color.Transparent;
+            this.labelInformation.ForeColor = System.Drawing.Color.White;
             this.labelInformation.Name = "labelInformation";
             // 
             // labelSize
             // 
             resources.ApplyResources(this.labelSize, "labelSize");
+            this.labelSize.BackColor = System.Drawing.Color.Transparent;
+            this.labelSize.ForeColor = System.Drawing.Color.White;
             this.labelSize.Name = "labelSize";
             // 
             // DownloadUpdateDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AutoUpdaterDotNET.Properties.Resources.orange_bcg;
             this.Controls.Add(this.labelSize);
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.pictureBoxIcon);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DownloadUpdateDialog";

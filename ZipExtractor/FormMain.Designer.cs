@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.labelInformation = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             // 
             this.pictureBoxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBoxIcon.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxIcon.Image = global::ZipExtractor.Properties.Resources.ZipExtractor;
             this.pictureBoxIcon.Location = new System.Drawing.Point(14, 14);
             this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(5);
@@ -60,32 +62,36 @@
             // labelInformation
             // 
             this.labelInformation.AutoSize = true;
+            this.labelInformation.BackColor = System.Drawing.Color.Transparent;
             this.labelInformation.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInformation.ForeColor = System.Drawing.Color.White;
             this.labelInformation.Location = new System.Drawing.Point(93, 14);
             this.labelInformation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelInformation.Name = "labelInformation";
-            this.labelInformation.Size = new System.Drawing.Size(68, 15);
+            this.labelInformation.Size = new System.Drawing.Size(134, 20);
             this.labelInformation.TabIndex = 3;
-            this.labelInformation.Text = "Extracting...";
+            this.labelInformation.Text = "Przygotowywanie...";
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackgroundImage = global::ZipExtractor.Properties.Resources.orange_bcg;
             this.ClientSize = new System.Drawing.Size(506, 100);
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.progressBar);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMain";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Installing update...";
+            this.Text = "Instalacja aktualizacji...";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Shown += new System.EventHandler(this.FormMain_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();

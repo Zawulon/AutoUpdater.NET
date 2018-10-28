@@ -168,6 +168,26 @@ namespace AutoUpdaterDotNET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap orange_bcg {
+            get {
+                object obj = ResourceManager.GetObject("orange_bcg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Pitax_pl {
+            get {
+                object obj = ResourceManager.GetObject("Pitax_pl", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap update {
             get {
                 object obj = ResourceManager.GetObject("update", resourceCulture);
@@ -208,16 +228,6 @@ namespace AutoUpdaterDotNET.Properties {
         internal static string UpdateUnavailableMessage {
             get {
                 return ResourceManager.GetString("UpdateUnavailableMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] ZipExtractor {
-            get {
-                object obj = ResourceManager.GetObject("ZipExtractor", resourceCulture);
-                return ((byte[])(obj));
             }
         }
     }

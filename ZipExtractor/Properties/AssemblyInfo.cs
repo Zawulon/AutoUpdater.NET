@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ZipExtractor")]
+[assembly: AssemblyTitle("Pitax.pl Aktualizator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RBSoft")]
-[assembly: AssemblyProduct("ZipExtractor")]
-[assembly: AssemblyCopyright("Copyright © 2012-2018 RBSoft")]
+[assembly: AssemblyCompany("Pitax.pl")]
+[assembly: AssemblyProduct("Pitax.pl Aktualizator")]
+[assembly: AssemblyCopyright("Copyright © 2012-2018 Pitax.pl")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
